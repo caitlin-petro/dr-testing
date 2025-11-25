@@ -17,3 +17,4 @@ jobs:
       uses: astronomer/deploy-action@v0.10.0
       with:
         deployment-id: ${{ secrets.ASTRO_PRIMARY_DEPLOYMENT_ID }}
+        force: true
