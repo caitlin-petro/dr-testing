@@ -1,4 +1,4 @@
-FROM quay.io/astronomer/astro-runtime:12.9.0
+FROM quay.io/astronomer/astro-runtime:13.2.0
 USER root
 RUN apt-get update \
  && apt-get install -y --no-install-recommends skopeo \
