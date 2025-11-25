@@ -1,7 +1,7 @@
 [
   {
-    "source_workspace_id": "<Workspace ID to backup>",
-    "source_workspace_name": "<Name of workspace to backup>",
-    "backup_workspace_name": "<Name of workspace for backup>"
+    "source_workspace_id": "cmdj8gss31s5u01n6d95yujpn",
+    "source_workspace_name": "Workspace",
+    "backup_workspace_name": "Failover Workspace"
   }
 ]
