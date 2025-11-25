@@ -1,0 +1,19 @@
+name: Astronomer CI - Deploy DAG and dbt code to Astro
+
+on: 
+  push:
+    branches:
+      - caitlins-castle
+
+env:
+  ## Sets Deployment API key credentials as environment variable
+  ASTRO_API_TOKEN: ${{ secrets.ASTRO_API_TOKEN_GH }}
+  
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: DAGs/Image Deploy to Astro
+      uses: astronomer/deploy-action@v0.10.0
+      with:
+        deployment-id: ${{ secrets.ASTRO_PRIMARY_DEPLOYMENT_ID }}
